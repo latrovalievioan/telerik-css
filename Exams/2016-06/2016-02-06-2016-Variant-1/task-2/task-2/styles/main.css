@@ -1,0 +1,113 @@
+body{
+    display:flex;
+    justify-content: center;
+}
+
+#root {
+    width:818px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#root> #site-header{
+    width:100%;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    background-color:#CCCCCC;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+#root > .superheroes {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.superheroes>li {
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position:relative;
+}
+
+
+li>img {
+    display: block;
+    border-radius: 11px;
+    width: 139px;
+    height: 138px;
+}
+
+li>.hero-header {
+    position: absolute;
+    text-align: center;
+    color: rgba(255,255,255,.5);
+    background-color: rgba(0,0,0,.30);
+    margin-left: 0px;
+    width: 139px;
+    height: 32px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding-top: 8px;
+    font-size: 15px;
+}
+
+#root > #site-header > span::before {
+    background-image: url(../imgs/logo.png);
+    content: " ";
+    display: block;
+    width: 50px;
+    height: 17px;
+    position: absolute;
+    top: 6px;
+    left: -58px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 100000;
+    background-clip: content-box;
+    overflow: visible;
+}
+
+
+#root > #site-header > span {
+    position: relative;
+}
+
+
+#root > #site-header > span {
+    top: 7px;
+    font-size: 25.6px;
+}
+
+.superheroes > li:hover > img {
+    width: 164px;
+    height: 164px;
+}
+
+.superheroes > li:hover > .hero-header {
+    width: 161px;
+    padding-left: 3px;
+    background-color: rgba(0,0,0,.75);
+    color: rgba(255,255,255,.95);
+}
+
+.superheroes > li:hover > a {
+    display: block;
+}
+.superheroes > li > a {
+    background-color: #646464;
+    width: 164px;
+    height: 30px;
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255,255,255,.95);
+    font-size: small;
+    padding-top: 8px;
+    box-sizing: border-box;
+}
