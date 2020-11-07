@@ -1,0 +1,104 @@
+#wrapper {
+    font-family: sans-serif;
+    width: 595px;
+    height: 650px;
+    border: 2px solid rgb(0 0 0 / 17%);
+    border-radius: 4px;
+    margin-top: 11px;
+    margin-left: 3px;
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+}
+
+.header > img {
+    border: 1px solid #0000001c;
+    width: 48px;
+}
+
+.header > div {
+    margin-left: 10px;
+    align-self: center;
+}
+
+.header > div > div > .name {
+    color: #365899;
+    font-size: 19px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header > div > div > .timestamp {
+    text-decoration: none;
+    color: #777777;
+    font-size: 14px;
+    font-weight: lighter;
+    letter-spacing: 0.18px;
+}
+
+#wrapper > div > p {
+    height: 69px;
+    line-height: 22px;
+    color: #77778D;
+}
+
+#wrapper > div > .event {
+    height: 419px;
+    box-shadow: 0px 0px 13px -5px #000000;
+}
+
+#wrapper > div > .event > .main-image {
+    width: 563px;
+    height: 285px;
+}
+
+#wrapper > div > .event > .title {
+    margin-top: 18px;
+    margin-left: 16px;
+    margin-right: 21px;
+    font-size: 22px;
+    letter-spacing: 0.19px;
+    font-weight: 200;
+    font-family: fangsong;
+}
+
+#wrapper > div > .event > .author {
+    margin-top: 4px;
+    margin-left: 15px;
+    color: #99A6B3;
+    font-size: 13px;
+    letter-spacing: -0.1;
+}
+
+#wrapper > div > .event > .capital {
+    margin-top: 9px;
+    margin-left: 15px;
+    color: #99A6B3;
+    font-size: 13px;
+    letter-spacing: -0.1;
+    text-transform: uppercase;
+}
+
+#wrapper > .footer {
+    margin-top: 22px;
+    padding-top: 10px;
+    padding-left: 33px;
+    border-top: 1px solid #CCCCCC;
+}
+
+#wrapper > .footer > a {
+    color: #777777;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 41px;
+    font-weight: bold;
+}
+
+a {
+    cursor: pointer;
+}
